@@ -14,7 +14,7 @@ WordPress plugin for adding MailChimp's Goal tracking code to your WordPress sit
 #What is Goal?
 Goal is an optional campaign tracking feature available for [paid accounts](http://kb.mailchimp.com/article/how-do-mailchimp-pricing-plans-work) that lets you trigger [autoresponders](http://kb.mailchimp.com/article/how-do-i-create-an-autoresponder) based on subscriber activity from your email campaigns to your website. The Goal integration can also be used to create segments of subscribers allowing you to send targeted campaigns to your subscribers based on their Goal activity.
 
-[More information about MailChimp Goal...](http://kb.mailchimp.com/article/how-do-i-use-goals-tracking/#how
+[More information about MailChimp Goal...](http://kb.mailchimp.com/article/how-do-i-use-goals-tracking/#how)
 
 #Enable Goal for your MailChimp account
 Before installing MailChimp Goal for WordPress, make sure to enable Goal tracking in your MailChimp account.  From your MailChimp dashboard:
