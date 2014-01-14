@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WordPress plugin for adding MailChimp's Goal tracking code to your WordPress site.
+A plugin for adding MailChimp's Goal tracking code to your WordPress site.
 
 == Description ==
 
