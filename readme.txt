@@ -54,8 +54,11 @@ Right now, Goal is only available for paid accounts.
 
 == Screenshots ==
 
-1. Connect with your MailChimp API Key
-2. A summary of the account
+[Connect with your MailChimp API Key](/assets/screenshot-1.png)
+* Connect with your MailChimp API Key
+
+[A summary of the account](/assets/screenshot-2.png)
+* A summary of the account
 
 == Changelog ==
 
