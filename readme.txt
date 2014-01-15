@@ -64,6 +64,9 @@ Right now, Goal is only available for paid accounts.
 
 == Changelog ==
 
+= 1.1 =
+* Fix issue where datacenters wouldn't save.
+
 = 1.0 =
 * Initial release of MailChimp Goal for WordPress.
 * Include Goal tracking javascript code within head tags for generic WordPress themes.
