@@ -26,7 +26,8 @@ if($_POST['clear']){
 		$account_details = $api->helper->accountDetails();
 		$options['user_id'] = $account_details['user_id'];
 		$options['apikey'] = $goalWPapikey;
-		$options['dc'] = substr($goalWPapikey, -3);
+		$dc = explode("-",$goalWPapikey,2);
+		$options['dc'] = $dc[1];
 		$options['contact'] = $account_details['contact']['email'];
 		$options['username'] = $account_details['username'];
 		update_option('goalWP', $options);
