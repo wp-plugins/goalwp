@@ -17,7 +17,8 @@
 </div>
 <div class="content">
 	<form method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
-		<input type="text" name="mcapi" placeholder="MailChimp API Key" required>
+		<input type="text" name="mcapi" placeholder="MailChimp API Key" required><br />
+		<a href="#" onClick="MCOAuth2=window.open('https://login.mailchimp.com/oauth2/authorize?response_type=code&client_id=906943139526&redirect_uri=http%3A%2F%2F198.199.74.36%2FgoalWP%2Fcomplete.php','MCOAuth2','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=400,height=600'); return false;"><?php echo __('Generate a new API Key', 'goalWP');?></a><br />
 		<input type="submit" class="">
 	</form>
 </div>

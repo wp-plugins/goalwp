@@ -2,7 +2,7 @@
 Contributors: mc_nate, MC_Will
 Tags: MailChimp, MailChimp Goal, Goal,
 Requires at least: 3.8
-Tested up to: 4.0
+Tested up to: 3.9
 Stable tag: 1.1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -63,6 +63,10 @@ Right now, Goal is only available for paid accounts.
 2. A summary of the account
 
 == Changelog ==
+
+= 1.1.2 =
+* General code cleanup.
+* Get rid of php short tags.
 
 = 1.1 =
 * Fix issue where datacenters wouldn't save.
