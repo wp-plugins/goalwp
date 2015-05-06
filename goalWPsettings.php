@@ -21,18 +21,17 @@ $goalWP = get_option('goalWP');
 if($_POST['clear']){
     delete_option('goalWP');
 }elseif($_POST['mcapi']){
-    require_once(plugin_dir_path( __FILE__ ) . '/lib/Mailchimp.php');
+    require_once(plugin_dir_path( __FILE__ ) . '/lib/Goal.php');
     $goalWPapikey = trim(strip_tags($_POST['mcapi']));
     try{
-        $api = new Mailchimp($goalWPapikey);
+        $api = new GoalWP($goalWPapikey);
 
-        $account_details     = $api->helper->accountDetails();
-        $options['user_id']  = $account_details['user_id'];
-        $options['apikey']   = $goalWPapikey;
-        $dc                  = explode("-", $goalWPapikey, 2);
-        $options['dc']       = $dc[1];
-        $options['contact']  = $account_details['contact']['email'];
-        $options['username'] = $account_details['username'];
+        $account_details = $api->get($api->root, $api->apikey);
+
+        $options['user_id']  = $account_details->account_id;
+        $options['apikey']   = $api->apikey;
+        $options['dc']       = $api->dc;
+        $options['username'] = $account_details->account_name;
         
         update_option('goalWP', $options);
         ?>
@@ -44,22 +43,22 @@ if($_POST['clear']){
         </div>
 
         <?php
-            } catch(Mailchimp_Error $e) {
+            } catch (Exception $e) {
                 if($e->getMessage()) {
-                        ?>
+                            ?>
 
-                    <div class="error">
+                        <div class="error">
 
-            <?php echo $e->getMessage();?>
-                    
-                    </div>
+                <?php echo $e->getMessage();?>
+                        
+                        </div>
 
-            <?php
-        
-                delete_option('goalWP');
-        
+                <?php
+            
+                    delete_option('goalWP');
+            
+                }
             }
-        }
 };
 
 goalWPoptions();

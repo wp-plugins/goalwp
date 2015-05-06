@@ -53,6 +53,8 @@ First, make sure Goal has been enabled in your MailChimp account.  After logging
 
 Second, in order to track subscribers, you'll need to send a campaign with [Goal tracking](http://kb.mailchimp.com/article/how-can-i-add-additional-tracking-options-to-my-campaigns#goooal) enabled.
 
+Goal for MailChimp honors "Do Not Track" requests. Any user including this header will not be tracked via Goal.
+
 = Does MailChimp Goal work with Forever Free accounts? =
 
 Right now, Goal is only available for paid accounts.
@@ -63,6 +65,9 @@ Right now, Goal is only available for paid accounts.
 2. A summary of the account
 
 == Changelog ==
+
+= 1.2 =
+* Switch to using v3.0 of the MailChimp API.
 
 = 1.1.2 =
 * General code cleanup.
